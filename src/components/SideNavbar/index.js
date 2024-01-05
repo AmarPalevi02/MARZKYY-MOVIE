@@ -10,7 +10,7 @@ import { BiBullseye } from "react-icons/bi";
 
 const SideNavbar = () => {
     return (
-        <div className='px-5 py-5 bg-bcground w-[240px] h-[100vh] min-h-[100vh] overflow-y-hidden top-0 sticky '>
+        <div className='px-5 py-5 bg-bcground w-[240px] h-[100vh] min-h-[100vh] overflow-y-hidden top-0 sticky xs:hidden  md:block sm:block ss:block '>
             <ul className='flex justify-between '>
                 <nav className='text-gray text-lg cursor-pointer flex gap-5 flex-col '>
                     <Link href={'/'}>
