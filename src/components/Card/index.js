@@ -5,7 +5,7 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 
 const Card = ({ api }) => {
     return (
-        <div className='grid md:grid-cols-4 sm:grid-cols-3 gap-2 xs:gap-3 xs:px-2'>
+        <div className='grid md:grid-cols-4 sm:grid-cols-3 gap-2 xs:gap-3 xs:px-2 '>
             {api.map((item) => {
                 return (
                     <Link href={`/${item.mal_id}`}  key={item.mal_id} className='bg-slate-900'>

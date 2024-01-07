@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         className={inter.className}>
         <div className='flex bg-bacground h-[100vh] w-[100vw] relative min-w-[100vw] overflow-x-hidden'>
           <SideNavbar />
-          <div className='w-[calc(100vw-240px)] h-[100vh] xs:w-full '>
+          <div className='w-[calc(100vw-240px)] h-[100vh] xs:w-full relative'>
             {children}
           </div>
         </div>

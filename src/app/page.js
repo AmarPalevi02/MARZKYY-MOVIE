@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/Navbar/Navbar"
 import Card from "../components/Card"
 import Description from "../components/Description"
 
@@ -10,6 +10,10 @@ export default async function Home() {
   return (
     <>
       <Navbar />
+      <section className="md:pt-20 sm:pt-20 xs:pt-0">
+        <Description>#Popular</Description>
+        <Card api={Topanime} />
+      </section>
       <section>
         <Description>#Popular</Description>
         <Card api={Topanime} />

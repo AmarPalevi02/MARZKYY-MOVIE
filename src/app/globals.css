@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 * {
-  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
 }
+
 
 img {
   width: 100%;
@@ -19,4 +22,8 @@ img {
   background-color: black;
   border-radius: 6px;
   display: none;
+}
+
+nav {
+  width: calc(100vw - 223px);
 }
