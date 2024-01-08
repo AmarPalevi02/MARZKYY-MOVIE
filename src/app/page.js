@@ -13,16 +13,13 @@ export default function Home() {
     const getData = await fetch(`${process.env.NEXT_PUBLIC__API_BASE_URL}/top/anime?limit=8`)
       .then(response => response.json())
 
-    setTimeout(() => {
       setTopAnime(getData.data)
       setIsLoading(false)
-    }, 3000)
   }
 
   useEffect(() => {
     getTop()
   }, [])
-
 
   return (
     <>

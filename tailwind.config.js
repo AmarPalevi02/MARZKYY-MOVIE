@@ -8,6 +8,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        fontFamily: {
+          sans: ['Poppins', 'sans-serif'],
+        },
+        fontWeight: {
+          regular: 400, /* Sesuaikan dengan bobot yang tersedia */
+        },
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
