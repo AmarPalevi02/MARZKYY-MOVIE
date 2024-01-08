@@ -9,6 +9,9 @@ const InputSearch = () => {
 
     const handleSearch = (e) => {
         const keyword = ref.current.value
+
+        if (!keyword) return
+
         if (e.key === 'Enter' || e.type === 'click') {
             e.preventDefault()
             route.push(`/${keyword}`)

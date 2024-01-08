@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar/Navbar"
 import Card from "../components/Card"
 import Description from "../components/Description"
 import { useEffect, useState } from "react"
+import { getTopAnime } from "@/utils/fetch"
 
 export default function Home() {
   const [topAnime, setTopAnime] = useState([])
@@ -10,11 +11,10 @@ export default function Home() {
 
   const getTop = async () => {
     setIsLoading(true)
-    const getData = await fetch(`${process.env.NEXT_PUBLIC__API_BASE_URL}/top/anime?limit=8`)
-      .then(response => response.json())
+    const getData = await getTopAnime("top/anime", "limit=8")
 
-      setTopAnime(getData.data)
-      setIsLoading(false)
+    setTopAnime(getData.data)
+    setIsLoading(false)
   }
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Home() {
       <Navbar />
       <section className="md:pt-20 sm:pt-20 xs:pt-0">
         <Description>#Popular</Description>
-          <Card api={topAnime} isLoading={isLoading}/> 
+        <Card api={topAnime} isLoading={isLoading} />
       </section>
       {/* <section>
         <Description>#Popular</Description>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Seceleton = () => {
     return (
-        <div className="bg-zinc-700">
+        <div className="bg-zinc-700 268px">
             <div className="relative">
                 <div className=" w-full h-[200px] animate-pulse flex relative ">
                     <div className="w-full h-full bg-zinc-900"></div>
