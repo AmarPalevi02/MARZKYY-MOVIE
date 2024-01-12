@@ -13,7 +13,7 @@ const Card = ({ api, isLoading }) => {
                 <>
                     {api.map((item) => {
                         return (
-                            <Link href={`/${item.mal_id}`} key={item.mal_id} className='border border-slate-400 rounded-t-md h-[268px]'>
+                            <Link href={`/detailAnime/${item.mal_id}`} key={item.mal_id} className='border border-slate-400 rounded-t-md h-[268px]'>
                                 <div className='relative' >
                                     <div className="overflow-hidden hover:rounded-t-md">
                                         <div className="w-full h-[200px] flex relative hover:scale-125 hover:opacity-25  hover:ease-out duration-300 hover:rounded-t-md">
