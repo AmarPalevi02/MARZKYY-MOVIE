@@ -1,8 +1,7 @@
 "use client"
-import DescriptionDetail from '@/components/DetailAnime/DescriptionDetail'
-import PlayVideo from '@/components/DetailAnime/PlayVideo'
+
+import Layout from '@/components/DetailAnime/Layout'
 import { getTopAnime } from '@/utils/fetch'
-import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
@@ -27,10 +26,7 @@ const DetailAnime = () => {
   console.log(detailAnime)
   return (
     <div className=''>
-      <div className="">
-        <PlayVideo youtubeId={youtubeId} />
-        <DescriptionDetail title={detailAnime.title} image={img} />
-      </div>
+      <Layout youtubeId={youtubeId} title={detailAnime.title} image={img} score={detailAnime.scored_by} />
     </div>
   )
 }
