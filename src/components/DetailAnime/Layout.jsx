@@ -1,12 +1,16 @@
 import React from 'react'
 import PlayVideo from './PlayVideo'
-import DescriptionDetail from './DescriptionDetail'
+import Header from './Header'
+import Description from './Description'
 
-const Layout = ({ youtubeId, title, image, score }) => {
+const Layout = ({ youtubeId, title, image, score, des }) => {
     return (
-        <div className='w-[63%] h-[100vh] relative'>
-            <PlayVideo youtubeId={youtubeId} />
-            <DescriptionDetail title={title} image={image} score={score} />
+        <div className="">
+            <div className='w-[63%] h-[100vh] relative'>
+                <PlayVideo youtubeId={youtubeId} />
+                <Header title={title} image={image} score={score} />
+                <Description des={des} />
+            </div>
         </div>
     )
 }
