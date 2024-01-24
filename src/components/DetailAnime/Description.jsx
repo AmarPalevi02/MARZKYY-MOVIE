@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 const Description = ({ des }) => {
-    // console.log(des.length)
     const [showAll, setShowAll] = useState(false)
 
     const showAllDes = () => {
