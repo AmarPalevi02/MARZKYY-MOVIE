@@ -20,8 +20,9 @@ module.exports = {
       },
       colors: {
         bacground: '#000000',
-        gray: '#9A9A9A',
+        gray0: '#9A9A9A',
         gray1: '#C4C4C4',
+        
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

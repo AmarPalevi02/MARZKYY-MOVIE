@@ -14,7 +14,7 @@ const SideNavbar = () => {
     return (
         <div className='px-5 py-5 bg-bcground w-[240px] h-[100vh] min-h-[100vh] overflow-x-hidden top-0 sticky xs:hidden  md:block sm:block ss:block '>
             <ul className='flex justify-between '>
-                <nav className='text-gray text-lg cursor-pointer flex gap-5 flex-col '>
+                <nav className='text-gray0 text-lg cursor-pointer flex gap-5 flex-col '>
                     <Link href={'/'}>
                         <li className='flex items-center gap-3 font-semibold '>
                             <GoHome className='text-[25px]' />
@@ -50,7 +50,7 @@ const SideNavbar = () => {
                 </nav>
             </ul>
 
-            <nav className='text-gray mt-[36px] '>
+            <nav className='text-gray0 mt-[36px] '>
                 <ul className='border-b-2 border-[#242424]'>
                     <Link href={'/ewew'}>
                         <li className='flex items-center gap-3 font-semibold mb-5'>
@@ -84,7 +84,7 @@ const SideNavbar = () => {
                     </Link>
                 </ul>
             </nav>
-            <h3 className='text-gray mt-8 font-semibold'>Playlist Name</h3>
+            <h3 className='text-gray0 mt-8 font-semibold'>Playlist Name</h3>
         </div>
     )
 }
