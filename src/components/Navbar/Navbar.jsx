@@ -2,9 +2,9 @@
 import React from 'react'
 import { IoIosArrowBack } from "react-icons/io";
 import { GrNotification } from "react-icons/gr";
-import { FaRegUser } from "react-icons/fa";
 import { usePathname } from 'next/navigation'
 import InputSearch from './InputSearch';
+import User from './UserLogin';
 
 const Navbar = () => {
     const pathname = usePathname()
@@ -46,11 +46,7 @@ const Navbar = () => {
                 >
                     <GrNotification />
                 </button>
-                <button
-                    className="w-[30px] h-[30px] bg-[#272829] rounded-full flex justify-center items-center text-center"
-                >
-                    <FaRegUser />
-                </button>
+                <User />
             </ul>
         </nav>
     )

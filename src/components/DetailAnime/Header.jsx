@@ -4,7 +4,6 @@ import { AiOutlineLike } from "react-icons/ai";
 
 const Header = ({ title, image, score }) => {
     const formatNumber = Intl.NumberFormat().format(score)
-
     
     return (
         <div className="flex gap-2 items-center mt-2 justify-between ">
