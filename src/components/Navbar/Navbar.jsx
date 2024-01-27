@@ -4,13 +4,12 @@ import { IoIosArrowBack } from "react-icons/io";
 import { GrNotification } from "react-icons/gr";
 import { usePathname } from 'next/navigation'
 import InputSearch from './InputSearch';
-import User from './UserLogin';
+import UserLogin from './UserLogin';
 
 const Navbar = () => {
     const pathname = usePathname()
 
     const isHome = pathname === '/'
-
     return (
         <nav className='md:flex sm:flex justify-between transition-all duration-300 items-center py-5 top-0 z-10 fixed bg-black xs:hidden'>
             <div className="text-white flex gap-2 items-center">
@@ -46,7 +45,7 @@ const Navbar = () => {
                 >
                     <GrNotification />
                 </button>
-                <User />
+                <UserLogin />
             </ul>
         </nav>
     )
